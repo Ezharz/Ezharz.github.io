@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    height: 100vh;
+    Font-size: 16px;
+    line-height: 1.5;
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-repeat: repeat-x;
+    background-color: var(--Pale-blue);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 370px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--Very-pale-blue);
+}
+
+.image-card img {
+    height: 180px;
+    width: 100%;
+}
+
+.card-content {
+    text-align: center;
+    padding: 12px;
+}
+.title {
+    font-size: 26px;
+    padding-top: 12px;
+}
+.desc-card {
+    font-size: 16px ;
+    padding-top: 15px;
+    color: var(--Desaturated-blue);
+}
+.plan-card{
+    display: flex;
+    flex-direction: row;
+    padding: 25px 0px 10px 35px;
+}
+.plan-card img {
+    width: 48px;
+    height: 50px;
+    align-items: center;
+}
+.desc-plan {
+    padding-left: 12px;
+}
+.desc-plan h3 {
+    font-weight: 700;
+}
+.desc-plan p {
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+.change{
+    display: flex;
+    align-items: center;
+    padding-left: 55px;
+}
+.card-btn {
+    display: flex;
+    flex-direction: column;
+}
+.card-btn a {
+    text-decoration: none;
+}
+.btn-primary {
+    margin: 20px 30px;
+    padding: 8px;
+    background-color: var(--Bright-blue);
+    border-radius: 8px;
+    color: var(--Very-pale-blue);
+    font-weight: 500;
+    font-size: 14px;
+}
+.btn-off {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
